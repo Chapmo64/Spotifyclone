@@ -4,6 +4,7 @@
     color: white;
     overflow: hidden;
 }
+
 .main{
     display: flex;
     height: 100vh;
@@ -15,13 +16,15 @@
     background-color: black;
     width: 340px;
     border-radius: 1rem;
+    margin-right: .5rem;
 }
 
 .maincontant{
-    background: linear-gradient(#272727, #121212);
+    background-color: #121212;
     flex: 1;
     border-radius: 1rem;
     overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
 }
 
 .musicplayer{
@@ -67,7 +70,7 @@ p{
 .nav_option a {
     font-size: 1.25rem;
     margin-left: 1rem;
-
+    margin-bottom: .5rem;
 } 
 
 .lib{
@@ -131,4 +134,153 @@ p{
     margin-bottom: .5rem;
     height: 2rem;
     width: fit-content;
+}
+
+.badge i {
+    color: black;
+}
+
+.stknavbar{
+    display: flex;
+    flex-direction: row;
+    background-color: #121212;
+    top: 0;
+    position: sticky;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 1rem .5rem 1rem;
+    z-index: 10;
+}
+
+.stknav_options{
+    display: flex;
+    padding-right: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.stknav_options div {
+    margin-right: 1rem;
+}
+
+.nav_icons {
+    font-size: 2rem;
+}
+
+.insbadge button{
+    background-color: black; 
+    color: white;
+} 
+
+@media (max-width: 1000px){
+    .hide {
+        display: none;
+    }
+}
+
+.card{
+    background-color: #232323;
+    padding: 1rem;
+}
+
+.cards_container{
+    display: flex;
+    width: 180px;
+    border-radius: .5rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.card img {
+    width: 100%;
+    border-radius: .5rem;
+}
+
+.card_tit{
+    font-weight: 600;
+}
+
+.card_info {
+    font-size:.8rem;
+    opacity: .8;
+}
+
+.blk {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer{
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.line{
+    width: 90%;
+    height: 80%;
+    border-top: 1px solid white;
+    opacity: 0.3;
+}
+
+.musicplayer{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.album{
+    width: 25%;
+    background-color: red;
+}
+
+.player{
+    width: 50%;
+}
+
+.player img {
+    height: 1rem;
+    margin-left: 1.75rem;
+    opacity: .7;
+}
+
+.plr_controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress_line{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+
+.progress_line::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.35rem;
+}
+
+
+.progress_line::-webkit-slider-thumb{
+    appearance: none;
+    height: 16px;
+    width: 16px;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+
+.controls{
+    width: 25%;
+    background-color: red;
 }
